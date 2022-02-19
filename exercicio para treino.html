@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DocumentSite para saber sua origem..!</title>
+    <style>
+        body {
+            font: normal 16pt Arial;
+            background-color: rgba(149, 221, 199, 0.678);
+        }
+
+        h1 {
+            width: 70;
+            height: 70px;
+            align-items: center;
+        }
+
+        ol {
+            font-size: larger;
+            font-weight: bold;
+        }
+
+        p {
+            color: rgb(207, 108, 108);
+            font: normal 18pt Verdana;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Diga-me se você é ou não do País.!</h1>
+    <p><i><b>Segue abaixo algumas opções!</b></i></p><br />
+    <ol>Brasil</ol>
+    <ol>China</ol>
+    <ol>Dinamarca</ol><br />
+    <input type="textArea" name="paises" id="paises">
+    <input type="button" value="resposta" onclick="resposta()">
+    <div id="res"><b>Resultado</b></div>    
+
+    <script>
+        function resposta() {
+            var pais = document.getElementById('paises').value
+
+                res.innerHTML = 'você é do(a): ' + pais;
+        }
+    </script>
+
+</body>
+
+</html>

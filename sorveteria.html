@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sorveteria</title>
+    <style>
+        body {
+            font: normal 16pt Arial;
+            background-color: rgba(149, 221, 199, 0.678);
+        }
+
+        h1 {
+            width: 70;
+            height: 70px;
+            align-items: center;
+        }
+
+        ol {
+            font-size: larger;
+            font-weight: bold;
+        }
+
+        p {
+            color: rgb(207, 108, 108);
+            font: normal 18pt Verdana;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Escolha um sabor e tamanho do sorvete</h1>
+      <input type="textArea" name="tamanho" id="tamanho">
+      <input type="textArea" name="sabor" id="sabor">
+    <input type="button" value="resposta" onclick="sorvete()">
+
+    <div id="res"><b>Resultado</b></div>    
+
+    <script>
+        function sorvete() {
+            var tamanho = document.getElementById('tamanho').value
+            var sabor = document.getElementById('sabor').value
+
+                res.innerHTML = 'o tamanho do meu sorvete é: ' + tamanho + ' e o sabor é: ' + sabor;
+ 
+        }
+    </script>
+
+</body>
+
+</html>
